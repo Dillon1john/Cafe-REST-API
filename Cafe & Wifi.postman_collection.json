@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "1dd89f26-dd63-47ee-b15b-f325f99bac21",
+		"name": "Cafe & Wifi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15056297"
+	},
+	"item": [
+		{
+			"name": "All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Random",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/random",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"random"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/search?loc=Peckham",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "loc",
+							"value": "Peckham"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "500",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Starbucks",
+							"type": "text"
+						},
+						{
+							"key": "map_url",
+							"value": "ww.none.com",
+							"type": "text"
+						},
+						{
+							"key": "img_url",
+							"value": "www.none.com",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "unknown",
+							"type": "text"
+						},
+						{
+							"key": "sockets",
+							"value": "True",
+							"type": "text"
+						},
+						{
+							"key": "toilet",
+							"value": "True",
+							"type": "text"
+						},
+						{
+							"key": "wifi",
+							"value": "True",
+							"type": "text"
+						},
+						{
+							"key": "calls",
+							"value": "True",
+							"type": "text"
+						},
+						{
+							"key": "seats",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "coffee_price",
+							"value": "$50",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/add",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update(PATCH)",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "new_price",
+							"value": "$3.80",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/update-price/22?new_price=$3.80",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"update-price",
+						"22"
+					],
+					"query": [
+						{
+							"key": "new_price",
+							"value": "$3.80"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/report-closed/22?api-key=TopSecretAPIKey",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"report-closed",
+						"22"
+					],
+					"query": [
+						{
+							"key": "api-key",
+							"value": "TopSecretAPIKey"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
